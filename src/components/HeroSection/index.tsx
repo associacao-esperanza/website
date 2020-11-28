@@ -1,4 +1,4 @@
-import Button from "components/Button";
+import Button, { ButtonType } from "components/Button";
 import React from "react";
 
 import * as S from "./styles";
@@ -12,8 +12,10 @@ const HeroSection = ({}) => (
       para populações carentes.
     </S.Description>
 
-    <Button>Seja aluno</Button>
-    <Button>Seja voluntário</Button>
+    <S.Actions>
+      <Button>Seja aluno</Button>
+      <Button type={ButtonType.SECONDARY}>Seja voluntário</Button>
+    </S.Actions>
   </S.Wrapper>
 );
 

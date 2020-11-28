@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "../styles/Home.module.css";
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer>
       <div>
         Icons made by{" "}
         <a href="https://www.flaticon.com/authors/freepik" title="Freepik">

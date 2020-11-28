@@ -10,6 +10,14 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @font-face {
+    font-family: "MADE TOMMY";
+    src: url("/fonts/made_tommy/MADE TOMMY Thin_PERSONAL USE.otf");
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+  }
+
+  @font-face {
     font-family: "Work Sans";
     src: url("/fonts/WorkSans/WorkSans-VariableFont_wght.ttf");
     font-style: normal;
