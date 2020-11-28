@@ -1,5 +1,5 @@
-import Button from "components/Button";
 import HeroSection from "components/HeroSection";
+import Projects from "components/Projects";
 import React from "react";
 
 import * as S from "./styles";
@@ -7,10 +7,8 @@ import * as S from "./styles";
 const Main = ({}) => (
   <S.Wrapper>
     <HeroSection />
-    <div>
-      <h2>Nosso projeto</h2>
-      <p>O que estamos fazendo para gerar impacto na educação?</p>
-    </div>
+    <Projects />
+
     <div>
       <h3>Cursinho Popular Esperanza</h3>
       <p>
@@ -112,28 +110,6 @@ const Main = ({}) => (
         <img src="" alt="Logo da empresa D" />
       </div>
     </div>
-    {/* Remove footer from here */}
-    <footer>
-      <div>
-        <h2>Associação Esperanza</h2>
-        <p>
-          Uma iniciativa que busca dar acesso a educação pública de qualidade
-          para todos.
-        </p>
-      </div>
-      <div>
-        <h4>Quer ajudar?</h4>
-        <a href="">Seja doador</a>
-        <a href="">Seja um parceiro</a>
-        <a href="">Seja voluntário</a>
-      </div>
-      <div>
-        <h4>Redes sociais</h4>
-        <a href="">Facebook</a>
-        <a href="">Instagram</a>
-        <a href="">Linkedin</a>
-      </div>
-    </footer>
   </S.Wrapper>
 );
 

@@ -16,9 +16,7 @@ export const Wrapper = styled.button<ButtonProps>`
   border: 0;
   border-radius: 7px;
 
-  font-family: MADE TOMMY;
-  font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.375rem; // 22px
   line-height: 1.227272727; // 27px
 `;

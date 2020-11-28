@@ -17,24 +17,19 @@ export const Wrapper = styled.section`
 `;
 
 export const Title = styled.h1`
-  font-family: MADE TOMMY;
   font-weight: 500;
   font-size: 36px;
   line-height: 32px;
-  display: flex;
-  align-items: center;
+
   text-align: center;
   color: #ffffff;
 `;
 
 export const Description = styled.p`
-  font-family: MADE TOMMY;
-  font-style: normal;
   font-weight: 100;
   font-size: 18px;
   line-height: 26px;
-  display: flex;
-  align-items: center;
+
   text-align: center;
   color: #ffffff;
 `;
