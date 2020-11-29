@@ -16,7 +16,7 @@ export const Title = styled.h2`
 export const Profile = styled.div`
   background: #ffffff;
   color: #000;
-  margin: 17px 23px;
+  margin: 17px 13px;
   font-family: Roboto, sans-serif;
 `;
 

@@ -7,6 +7,7 @@ import React from "react";
 
 import * as S from "./styles";
 import AboutUs from "components/AboutUs";
+import Partners from "components/Partners";
 
 const Main = ({}) => (
   <S.Wrapper>
@@ -16,22 +17,7 @@ const Main = ({}) => (
     <History />
     <MVV />
     <AboutUs />
-
-    <div>
-      <h2>Nossos parceiros</h2>
-      <p>
-        Quem apoia o Esperanza para continuar gerando impacto através das ações?
-      </p>
-      <div>
-        <img src="/img/logoSkore.png" alt="Logo da empresa Skore" />
-        <img src="/img/logoEduqo.png" alt="Logo da empresa Eduqo" />
-        <img
-          src="/img/logoFundacaoEstudar.png"
-          alt="Logo da empresa Fundação Estudar"
-        />
-        <img src="/img/logoLearni.png" alt="Logo da empresa Learni" />
-      </div>
-    </div>
+    <Partners />
   </S.Wrapper>
 );
 
