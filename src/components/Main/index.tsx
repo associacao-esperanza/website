@@ -1,4 +1,5 @@
 import HeroSection from "components/HeroSection";
+import Classes from "components/Classes";
 import Projects from "components/Projects";
 import React from "react";
 
@@ -8,15 +9,8 @@ const Main = ({}) => (
   <S.Wrapper>
     <HeroSection />
     <Projects />
+    <Classes />
 
-    <div>
-      <h3>Cursinho Popular Esperanza</h3>
-      <p>
-        Um cursinho popular que promove o acesso dos alunos a Universidade
-        Pública através do ENEM.
-      </p>
-      <button>Saiba mais</button>
-    </div>
     <div>
       <h2>Nossa História</h2>
       <p>

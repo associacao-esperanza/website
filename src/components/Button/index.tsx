@@ -5,6 +5,7 @@ import * as S from "./styles";
 export enum ButtonType {
   PRIMARY,
   SECONDARY,
+  TERTIARY,
 }
 
 export interface ButtonProps {
