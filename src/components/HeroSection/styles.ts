@@ -9,6 +9,8 @@ export const Wrapper = styled.section`
     ),
     url("/img/group.png");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   padding: 115px 52px 27px 52px;
   color: #ffffff;

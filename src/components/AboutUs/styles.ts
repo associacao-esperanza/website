@@ -4,6 +4,7 @@ export const Wrapper = styled.section`
   background-color: #ef7916;
   color: #fff;
   padding: 32px 10px 40px 10px;
+  text-align: center;
 `;
 
 export const Title = styled.h2`

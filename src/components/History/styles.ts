@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
+  text-align: center;
   position: relative;
   background-color: #1a407d;
   padding: 52px 10px 50px 10px;

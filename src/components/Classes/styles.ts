@@ -11,6 +11,8 @@ export const Wrapper = styled.section`
     ),
     url("/img/woman.png");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   color: #ffffff;
   text-align: center;
