@@ -1,4 +1,3 @@
-import Button, { ButtonType } from "components/Button";
 import React from "react";
 
 import * as S from "./styles";

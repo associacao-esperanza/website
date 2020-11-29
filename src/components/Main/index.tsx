@@ -2,6 +2,7 @@ import HeroSection from "components/HeroSection";
 import History from "components/History";
 import Classes from "components/Classes";
 import Projects from "components/Projects";
+import MVV from "components/MVV";
 import React from "react";
 
 import * as S from "./styles";
@@ -12,32 +13,7 @@ const Main = ({}) => (
     <Projects />
     <Classes />
     <History />
-    <div>
-      <div>
-        <img src="" alt="Foguete subindo" />
-        <h4>Missão</h4>
-        <p>
-          - Um cursinho popular que promove o acesso dos alunos a Universidade
-          Pública através do ENEM.
-        </p>
-      </div>
-      <div>
-        <img src="" alt="Binóculo" />
-        <h4>Visão</h4>
-        <p>
-          - Um cursinho popular que promove o acesso dos alunos a Universidade
-          Pública através do ENEM.
-        </p>
-      </div>
-      <div>
-        <img src="" alt="Caneta escrevendo em bloco de notas" />
-        <h4>Valores</h4>
-        <p>
-          - Um cursinho popular que promove o acesso dos alunos a Universidade
-          Pública através do ENEM.
-        </p>
-      </div>
-    </div>
+    <MVV />
     <div>
       <h2>O que estão falando do Esperanza?</h2>
       <div>
