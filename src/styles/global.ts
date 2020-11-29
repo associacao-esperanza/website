@@ -55,6 +55,10 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 400;
   }
 
+  html {
+    padding: env(safe-area-inset);
+  }
+
   html,
   body {
     padding: 0;

@@ -1,28 +1,33 @@
 import React from "react";
 
+import * as S from "./styles";
+
 function Footer() {
   return (
-    <footer>
-      <div>
-        <h2>Associação Esperanza</h2>
-        <p>
-          Uma iniciativa que busca dar acesso a educação pública de qualidade
-          para todos.
-        </p>
-      </div>
-      <div>
-        <h4>Quer ajudar?</h4>
-        <a href="">Seja doador</a>
-        <a href="">Seja um parceiro</a>
-        <a href="">Seja voluntário</a>
-      </div>
-      <div>
-        <h4>Redes sociais</h4>
-        <a href="">Facebook</a>
-        <a href="">Instagram</a>
-        <a href="">Linkedin</a>
-      </div>
-    </footer>
+    <S.Wrapper>
+      <S.Title>Associação Esperanza</S.Title>
+      <S.Description>
+        Uma iniciativa que busca dar acesso a educação pública de qualidade para
+        todos.
+      </S.Description>
+
+      <S.SubSection>
+        <S.SubTitle>Quer ajudar?</S.SubTitle>
+        <S.Link href="">Seja doador</S.Link>
+        <S.Link href="">Seja um parceiro</S.Link>
+        <S.Link href="">Seja voluntário</S.Link>
+      </S.SubSection>
+      <S.SubSection>
+        <S.SubTitle>Redes sociais</S.SubTitle>
+        <S.Link href="https://www.facebook.com/associacaoesperanza">
+          Facebook
+        </S.Link>
+        <S.Link href="https://www.instagram.com/associacao_esperanza">
+          Instagram
+        </S.Link>
+        <S.Link href="">Linkedin</S.Link>
+      </S.SubSection>
+    </S.Wrapper>
   );
 }
 

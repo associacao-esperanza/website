@@ -3,11 +3,12 @@ import History from "components/History";
 import Classes from "components/Classes";
 import Projects from "components/Projects";
 import MVV from "components/MVV";
+import AboutUs from "components/AboutUs";
+import Partners from "components/Partners";
+import Footer from "components/Footer";
 import React from "react";
 
 import * as S from "./styles";
-import AboutUs from "components/AboutUs";
-import Partners from "components/Partners";
 
 const Main = ({}) => (
   <S.Wrapper>
@@ -18,6 +19,7 @@ const Main = ({}) => (
     <MVV />
     <AboutUs />
     <Partners />
+    <Footer />
   </S.Wrapper>
 );
 
