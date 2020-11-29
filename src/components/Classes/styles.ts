@@ -27,7 +27,7 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   font-weight: 300;
-  font-size: 1.125; // 18px
+  font-size: 1.125rem; // 18px
   line-height: 1.44; // 26px
 
   margin-top: 33px;
