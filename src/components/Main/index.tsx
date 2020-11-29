@@ -6,6 +6,7 @@ import MVV from "components/MVV";
 import React from "react";
 
 import * as S from "./styles";
+import AboutUs from "components/AboutUs";
 
 const Main = ({}) => (
   <S.Wrapper>
@@ -14,57 +15,21 @@ const Main = ({}) => (
     <Classes />
     <History />
     <MVV />
-    <div>
-      <h2>O que estão falando do Esperanza?</h2>
-      <div>
-        <div>
-          <img src="" alt="Foto de Rafaela Maehara" />
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the. Lorem Ipsum is simply dummy text
-            of the printing and typesetting industry. Lorem. Lorem Ipsum is
-            simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s.
-          </p>
-          <div>- Rafaela Maehara (Diretora de Comunicação)</div>
-        </div>
-        <div>
-          <img src="" alt="Foto de Rafaela Maehara" />
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the. Lorem Ipsum is simply dummy text
-            of the printing and typesetting industry. Lorem. Lorem Ipsum is
-            simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s.
-          </p>
-          <div>- Rafaela Maehara (Diretora de Comunicação)</div>
-        </div>
-        <div>
-          <img src="" alt="Foto de Rafaela Maehara" />
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the. Lorem Ipsum is simply dummy text
-            of the printing and typesetting industry. Lorem. Lorem Ipsum is
-            simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s.
-          </p>
-          <div>- Rafaela Maehara (Diretora de Comunicação)</div>
-        </div>
-      </div>
-    </div>
+    <AboutUs />
+
     <div>
       <h2>Nossos parceiros</h2>
       <p>
         Quem apoia o Esperanza para continuar gerando impacto através das ações?
       </p>
       <div>
-        <img src="" alt="Logo da empresa A" />
-        <img src="" alt="Logo da empresa B" />
-        <img src="" alt="Logo da empresa C" />
-        <img src="" alt="Logo da empresa D" />
+        <img src="/img/logoSkore.png" alt="Logo da empresa Skore" />
+        <img src="/img/logoEduqo.png" alt="Logo da empresa Eduqo" />
+        <img
+          src="/img/logoFundacaoEstudar.png"
+          alt="Logo da empresa Fundação Estudar"
+        />
+        <img src="/img/logoLearni.png" alt="Logo da empresa Learni" />
       </div>
     </div>
   </S.Wrapper>

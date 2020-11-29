@@ -40,6 +40,7 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 400;
     font-display: swap;
   }
+
   @font-face {
     font-family: "Work Sans";
     src: url("/fonts/WorkSans/WorkSans-Italic-VariableFont_wght/ttf");
