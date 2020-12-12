@@ -7,11 +7,13 @@ import AboutUs from "components/AboutUs";
 import Partners from "components/Partners";
 import Footer from "components/Footer";
 import React from "react";
+import NavBar from "components/NavBar";
 
 import * as S from "./styles";
 
-const Main = ({}) => (
+const Main = () => (
   <S.Wrapper>
+    <NavBar />
     <HeroSection />
     <Projects />
     <Classes />

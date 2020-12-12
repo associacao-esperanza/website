@@ -35,7 +35,7 @@ const GlobalStyles = createGlobalStyle`
 
   @font-face {
     font-family: "Work Sans";
-    src: url("/fonts/WorkSans/WorkSans-VariableFont_wght.ttf");
+    src: url("/fonts/work_sans/WorkSans-VariableFont_wght.ttf");
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -43,7 +43,7 @@ const GlobalStyles = createGlobalStyle`
 
   @font-face {
     font-family: "Work Sans";
-    src: url("/fonts/WorkSans/WorkSans-Italic-VariableFont_wght/ttf");
+    src: url("/fonts/work_sans/WorkSans-Italic-VariableFont_wght/ttf");
     font-style: italic;
     font-weight: 400;
     font-display: swap;
