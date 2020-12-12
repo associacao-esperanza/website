@@ -1,13 +1,32 @@
 import styled from "styled-components";
+import { DESKTOP_WIDTH, TABLET_WIDTH } from "styles/constants";
 
-export const Wrapper = styled.section``;
+export const Wrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
+    max-width: 1244px;
+    margin: auto;
+  }
+`;
 
 export const Item = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    max-width: 300px;
+  }
 `;
 
 export const Icon = styled.i`

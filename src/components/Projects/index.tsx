@@ -2,7 +2,7 @@ import React from "react";
 
 import * as S from "./styles";
 
-const Projects: React.FC = () => (
+const Projects = () => (
   <S.Wrapper>
     <S.Title>Nossos projetos</S.Title>
     <S.Description>

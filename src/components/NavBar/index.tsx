@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 import * as S from "./styles";
 
-const NavBar = ({}) => {
+const NavBar = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
 
   return (

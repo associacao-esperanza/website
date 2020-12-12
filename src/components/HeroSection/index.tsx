@@ -3,7 +3,7 @@ import React from "react";
 
 import * as S from "./styles";
 
-const HeroSection = ({}) => (
+const HeroSection = () => (
   <S.Wrapper>
     <S.Title>Faça parte do Esperanza!</S.Title>
 

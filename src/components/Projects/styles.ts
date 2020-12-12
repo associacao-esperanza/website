@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { TABLET_WIDTH } from "styles/constants";
 
 export const Wrapper = styled.section`
   text-align: center;
@@ -9,6 +10,11 @@ export const Title = styled.h2`
   line-height: 1.25; // 45px
   margin-top: 0.7rem;
   margin-bottom: 0.7rem;
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
 `;
 
 export const Description = styled.p`

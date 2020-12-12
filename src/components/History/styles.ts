@@ -1,6 +1,9 @@
 import styled from "styled-components";
+import { TABLET_WIDTH } from "styles/constants";
 
 export const Wrapper = styled.section`
+  display: flex;
+  flex-direction: column;
   text-align: center;
   position: relative;
   background-color: #1a407d;
@@ -21,6 +24,11 @@ export const Wrapper = styled.section`
     background: #1a407d;
     transform-origin: bottom right;
     transform: skew(0, -10deg);
+
+    @media all and (min-width: ${TABLET_WIDTH}) {
+      height: 250%;
+      transform: skew(0, -6deg);
+    }
   }
 `;
 
@@ -38,4 +46,10 @@ export const Description = styled.p`
 
   margin-top: 9px;
   margin-bottom: 0;
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    align-self: center;
+    max-width: 1244px;
+    margin-top: 43px;
+  }
 `;

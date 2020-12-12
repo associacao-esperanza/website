@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DESKTOP_WIDTH, TABLET_WIDTH } from "styles/constants";
 
 export const Wrapper = styled.section`
   display: flex;
@@ -18,6 +19,15 @@ export const Wrapper = styled.section`
   text-align: center;
 
   padding: 29px 14px 57px 14px;
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    padding: 57px 14px;
+  }
+
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
+    padding-top: 97px;
+    background-position: initial;
+  }
 `;
 
 export const Title = styled.h2`
@@ -32,6 +42,13 @@ export const Description = styled.p`
   font-size: 1.125rem; // 18px
   line-height: 1.44; // 26px
 
-  margin-top: 33px;
-  margin-bottom: 190px;
+  margin-top: 2rem;
+  margin-bottom: 11.875rem;
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    max-width: 450px;
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
 `;

@@ -3,7 +3,7 @@ import React from "react";
 
 import * as S from "./styles";
 
-const Classes: React.FC = () => (
+const Classes = () => (
   <S.Wrapper>
     <S.Title>Cursinho Popular Esperanza</S.Title>
     <S.Description>

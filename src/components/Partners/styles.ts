@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DESKTOP_WIDTH, TABLET_WIDTH } from "styles/constants";
 
 export const Wrapper = styled.section`
   text-align: center;
@@ -27,6 +28,24 @@ export const Panel = styled.div`
   align-items: center;
 
   background: rgba(42, 181, 211, 0.7);
+`;
+
+export const Partners = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
+    max-width: 1244px;
+    margin: auto;
+  }
 `;
 
 export const Partner = styled.div`

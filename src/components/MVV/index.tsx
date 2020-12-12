@@ -2,7 +2,7 @@ import React from "react";
 
 import * as S from "./styles";
 
-const MVV: React.FC = () => (
+const MVV = () => (
   <S.Wrapper>
     <S.Item>
       <S.Icon>

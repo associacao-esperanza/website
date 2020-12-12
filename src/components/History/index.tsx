@@ -2,7 +2,7 @@ import React from "react";
 
 import * as S from "./styles";
 
-const History: React.FC = () => (
+const History = () => (
   <S.Wrapper>
     <S.Title>Nossa História</S.Title>
     <S.Description>
