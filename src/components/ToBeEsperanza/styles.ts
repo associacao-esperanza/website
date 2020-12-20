@@ -6,10 +6,9 @@ export const Wrapper = styled.section`
   flex-direction: column;
   text-align: center;
   position: relative;
-  background-color: #1a407d;
-  padding: 52px 10px 50px 10px;
+  background-color: rgb(42, 181, 211, 1);
+  padding: 20px 10px 50px 10px;
   color: #fff;
-  padding: 32px 10px 40px 10px;
   margin-bottom: 20%;
 
   &::after {
@@ -21,7 +20,7 @@ export const Wrapper = styled.section`
     bottom: 0;
     left: 0;
     z-index: -1;
-    background: #1a407d;
+    background-color: rgb(42, 181, 211, 1);
     transform-origin: bottom right;
     transform: skew(0, -10deg);
 
@@ -33,19 +32,26 @@ export const Wrapper = styled.section`
 `;
 
 export const Title = styled.h2`
-  font-size: 2.25rem; // 36px
-  line-height: 0.888; // 32px
-  margin-top: 0;
-  margin-bottom: 0;
+  width: 100%;
+  font-family: MADE TOMMY;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+`;
+
+export const Image = styled.img`
+  width: 100%;
 `;
 
 export const Description = styled.p`
-  font-weight: 300;
-  font-size: 1.125rem; // 18px
-  line-height: 1.44; // 26px
-
-  margin-top: 9px;
-  margin-bottom: 0;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left;
+  padding: 0 10px;
 
   @media all and (min-width: ${TABLET_WIDTH}) {
     align-self: center;

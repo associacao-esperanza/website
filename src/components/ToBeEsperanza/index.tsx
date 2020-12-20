@@ -5,6 +5,10 @@ import * as S from "./styles";
 const ToBeEsperanza = () => (
   <S.Wrapper>
     <S.Title>O que é ser Esperanza?</S.Title>
+    <S.Image
+      src="/img/Volunteers/laughingFriends.png"
+      alt="Foto abaixo do título de dois amigos rindo ao olhar para um celular"
+    />
     <S.Description>
       Ser Esperanza não pode ser explicado melhor por outra palavra que não seja
       a Resiliência, ou seja, por mais que tudo pareça perdido, que estamos em

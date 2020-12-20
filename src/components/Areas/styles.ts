@@ -2,23 +2,27 @@ import styled from "styled-components";
 import { DESKTOP_WIDTH, TABLET_WIDTH } from "styles/constants";
 
 export const Wrapper = styled.section`
-  background-color: #ef7916;
-  color: #fff;
+  background-color: #ffff;
   padding: 32px 10px 40px 10px;
   text-align: center;
 `;
 
 export const Title = styled.h2`
-  font-size: 2.25rem; // 36px
-  line-height: 0.888; // 32px
-  margin-top: 0;
-  margin-bottom: 0;
+  font-family: MADE TOMMY;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 45px;
+  text-decoration: underline 10px #2ab5d3;
 `;
 
 export const Messages = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  margin-bottom: 50px;
 
   @media all and (min-width: ${TABLET_WIDTH}) {
     flex-direction: row;
@@ -44,36 +48,43 @@ export const Image = styled.img`
 `;
 
 export const Description = styled.div`
-  &::before {
-    content: url("/img/leftQuote.png");
-    float: left;
-    margin-right: 10px;
-  }
-
-  font-size: 1.125rem; // 18px
-  line-height: 1.166666667; // 21px
-  margin: 13px 10px;
-
-  text-align: center;
-
-  &::after {
-    content: url("/img/rightQuote.png");
-    float: right;
-    margin-left: 10px;
-  }
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 144.5%;
+  text-align: left;
+  padding-left: 10px;
 `;
 
-export const ClearFix = styled.div`
-  &::before,
-  &::after {
-    content: " ";
-    display: table;
-    clear: both;
-  }
+export const Area = styled.div`
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 144.5%;
+  text-align: left;
+  padding: 10px 10px;
 `;
 
-export const Author = styled.div`
-  font-size: 1.1875rem; // 19px
-  line-height: 1.157894737; // 22px
-  padding: 10px 10px 23px 10px;
+export const Actions = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+
+  > * + * {
+    margin-top: 18px;
+  }
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 87px;
+
+    > * + * {
+      margin-top: 0;
+      margin-left: 18px;
+    }
+  }
 `;

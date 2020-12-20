@@ -6,46 +6,29 @@ export const Wrapper = styled.section`
   flex-direction: column;
   text-align: center;
   position: relative;
-  background-color: #1a407d;
-  padding: 52px 10px 50px 10px;
-  color: #fff;
-  padding: 32px 10px 40px 10px;
-  margin-bottom: 20%;
-
-  &::after {
-    content: " ";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    background: #1a407d;
-    transform-origin: bottom right;
-    transform: skew(0, -10deg);
-
-    @media all and (min-width: ${TABLET_WIDTH}) {
-      height: 250%;
-      transform: skew(0, -6deg);
-    }
-  }
+  padding: 0 10px;
 `;
 
 export const Title = styled.h2`
-  font-size: 2.25rem; // 36px
-  line-height: 0.888; // 32px
-  margin-top: 0;
-  margin-bottom: 0;
+  font-family: MADE TOMMY;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  color: #000000;
+  text-decoration: underline 10px #1a407d;
 `;
 
 export const Description = styled.p`
-  font-weight: 300;
-  font-size: 1.125rem; // 18px
-  line-height: 1.44; // 26px
-
-  margin-top: 9px;
-  margin-bottom: 0;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 144.5%;
+  color: #000000;
+  padding: 0 20px 200px 20px;
+  text-align: left;
 
   @media all and (min-width: ${TABLET_WIDTH}) {
     align-self: center;
