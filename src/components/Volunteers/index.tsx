@@ -7,15 +7,19 @@ import ToBeEsperanza from "components/ToBeEsperanza";
 import OurImpactAndODV from "components/OurImpactAndODV";
 import Benefits from "components/Benefits";
 import Areas from "components/Areas";
+import NavBar from "components/NavBar";
+import Footer from "components/Footer";
 
-const Main = () => (
+const Volunteers = () => (
   <S.Wrapper>
+    <NavBar />
     <VolunteerCTA />
     <ToBeEsperanza />
     <OurImpactAndODV />
     <Benefits />
     <Areas />
+    <Footer />
   </S.Wrapper>
 );
 
-export default Main;
+export default Volunteers;

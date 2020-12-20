@@ -4,24 +4,22 @@ import { DESKTOP_WIDTH, TABLET_WIDTH } from "styles/constants";
 export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(
-      rgba(26, 64, 125, 0.5),
-      rgba(26, 64, 125, 0.5)
-    ),
-    url("/img/group.png");
+  background-color: rgb(200, 101, 18, 0.5);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   padding: 115px 52px 27px 52px;
   color: #ffffff;
-  text-align: center;
+  text-align: left;
 `;
 
 export const Title = styled.h1`
+  font-family: MADE TOMMY;
   font-weight: 500;
   font-size: 36px;
-  line-height: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   @media all and (min-width: ${TABLET_WIDTH}) {
     margin: 100px 0 0 0;
@@ -34,9 +32,13 @@ export const Title = styled.h1`
 `;
 
 export const Description = styled.p`
-  font-weight: 100;
+  font-family: MADE TOMMY;
+  font-style: normal;
+  font-weight: normal;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 19px;
+  padding-bottom: 62px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   @media all and (min-width: ${TABLET_WIDTH}) {
     max-width: 480px;
