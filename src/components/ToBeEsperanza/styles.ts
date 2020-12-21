@@ -42,6 +42,12 @@ export const Title = styled.h2`
 
 export const Image = styled.img`
   width: 100%;
+  max-width: 780px;
+  max-height: 522px;
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    padding-left: 30px
+  }
 `;
 
 export const Description = styled.p`

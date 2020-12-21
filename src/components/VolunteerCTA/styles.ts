@@ -11,6 +11,15 @@ export const Wrapper = styled.section`
   padding: 115px 52px 27px 52px;
   color: #ffffff;
   text-align: left;
+
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
+    padding: 170px 0 27px 0;
+    align-items: center;
+    background: url(/img/Volunteers/capa-voluntariado.png),
+      rgba(200, 101, 18, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 `;
 
 export const Title = styled.h1`
@@ -27,7 +36,14 @@ export const Title = styled.h1`
   }
 
   @media all and (min-width: ${DESKTOP_WIDTH}) {
-    margin: 200px 0 0 0;
+    font-family: MADE TOMMY;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 `;
 
@@ -43,6 +59,7 @@ export const Description = styled.p`
   @media all and (min-width: ${TABLET_WIDTH}) {
     max-width: 480px;
     align-self: center;
+    text-align: center;
   }
 `;
 

@@ -8,7 +8,10 @@ const Areas = () => (
     <S.Title>Áreas</S.Title>
     <S.Messages>
       <S.Profile>
-        <S.Image src="/img/Areas/capa-area.png" alt="Foto de Rafaela Maehara" />
+        <S.Image
+          src="/img/Volunteers/capa-area.png"
+          alt="Foto mãos digitando em um latop envolto por ícones que remetem à web"
+        />
         <S.Area>Comunicação</S.Area>
         <S.Description>
           Para fazer com que você tenha acesso a inúmeros benefícios por ser
