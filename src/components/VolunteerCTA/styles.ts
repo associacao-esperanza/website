@@ -11,6 +11,7 @@ export const Wrapper = styled.section`
   padding: 115px 52px 27px 52px;
   color: #ffffff;
   text-align: left;
+  box-sizing: border-box;
 
   @media all and (min-width: ${DESKTOP_WIDTH}) {
     padding: 170px 0 27px 0;

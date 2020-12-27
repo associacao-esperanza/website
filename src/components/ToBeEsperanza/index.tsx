@@ -9,14 +9,17 @@ const ToBeEsperanza = () => (
       src="/img/Volunteers/laughingFriends.png"
       alt="Foto abaixo do título de dois amigos rindo ao olhar para um celular"
     />
-    <S.Description>
-      Ser Esperanza não pode ser explicado melhor por outra palavra que não seja
-      a Resiliência, ou seja, por mais que tudo pareça perdido, que estamos em
-      um beco sem saída, nós levantamos a cabeça, aprendemos com toda a
-      experiência, e saímos mais fortes após esse desafio para outros desafios
-      maiores ainda, pois acreditamos que para mudar o mundo através da Educação
-      não será fácil, mas nós estamos falando sério!vh
-    </S.Description>
+    <S.DescriptionWrapper>
+      <S.TitleDesktop>O que é ser Esperanza?</S.TitleDesktop>
+      <S.Description>
+        Ser Esperanza não pode ser explicado melhor por outra palavra que não
+        seja a Resiliência, ou seja, por mais que tudo pareça perdido, que
+        estamos em um beco sem saída, nós levantamos a cabeça, aprendemos com
+        toda a experiência, e saímos mais fortes após esse desafio para outros
+        desafios maiores ainda, pois acreditamos que para mudar o mundo através
+        da Educação não será fácil, mas nós estamos falando sério!vh
+      </S.Description>
+    </S.DescriptionWrapper>
   </S.Wrapper>
 );
 

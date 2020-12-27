@@ -4,29 +4,47 @@ import { DESKTOP_WIDTH, TABLET_WIDTH } from "styles/constants";
 export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding-bottom: 150px;
 
   @media all and (min-width: ${TABLET_WIDTH}) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  @media all and (min-width: ${DESKTOP_WIDTH}) {
-    max-width: 1244px;
-    margin: auto;
+    align-items: center;
   }
 `;
 
 export const Title = styled.h3`
+  margin: 0;
   font-family: MADE TOMMY;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 45px;
-  align-items: center;
   text-align: center;
   color: #000000;
   text-decoration: underline 10px #ff9900;
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    width: 100%;
+    background-color: rgb(42, 181, 211);
+  }
+`;
+
+export const NumbersWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+
+  div {
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    width: 100%;
+    background-color: rgb(42, 181, 211);
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
 `;
 
 export const ImpactNumbers = styled.span`
@@ -65,10 +83,36 @@ export const ODVsTitle = styled.p`
 `;
 
 export const ODVsDescription = styled.span`
+  max-width: 1235px;
   font-family: Work Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 144.5%;
   padding: 0 10px 100px 10px;
+`;
+
+export const IconsWrapper = styled.div`
+  display: none;
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    max-width: 1070px;
+    display: grid;
+    grid-template-columns: repeat(3, 175px);
+    grid-auto-rows: 145px;
+    grid-gap: 8vw 13vw;
+
+    img {
+      background: #ef7916;
+      outline: solid 25px #ef7916;
+      margin-bottom: 50px;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+    }
+  }
 `;

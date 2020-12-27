@@ -5,6 +5,9 @@ export const Wrapper = styled.section`
   background-color: #ffff;
   padding: 32px 10px 40px 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const Title = styled.h2`
@@ -16,7 +19,7 @@ export const Title = styled.h2`
   text-decoration: underline 10px #2ab5d3;
 `;
 
-export const Messages = styled.div`
+export const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,13 +28,9 @@ export const Messages = styled.div`
   margin-bottom: 50px;
 
   @media all and (min-width: ${TABLET_WIDTH}) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  @media all and (min-width: ${DESKTOP_WIDTH}) {
-    max-width: 1244px;
-    margin: auto;
+    max-width: 1250px;
+    min-width: 700px;
+    width: 70vw;
   }
 `;
 
@@ -41,6 +40,17 @@ export const Profile = styled.div`
   margin: 17px 13px;
   font-family: Roboto, sans-serif;
   max-width: 365px;
+  display: flex;
+  flex-direction: column;
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  div:first-child {
+    flex-direction: column;
+  }
 `;
 
 export const Image = styled.img`
