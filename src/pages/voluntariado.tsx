@@ -1,5 +1,5 @@
 import Volunteers from "../components/Volunteers";
 
-export default function Home() {
+export default function Voluntariado() {
   return <Volunteers />;
 }

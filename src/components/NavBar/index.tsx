@@ -27,7 +27,7 @@ const NavBar = () => {
           <S.Link href="/doacao">Doação</S.Link>
         </S.Item>
         <S.Item active={isMenuOpened}>
-          <S.Link href="/membros">Membros</S.Link>
+          <S.Link href="/equipe">Equipe</S.Link>
         </S.Item>
         <S.Item active={isMenuOpened}>
           <S.Link href="/iniciativas-educacionais">

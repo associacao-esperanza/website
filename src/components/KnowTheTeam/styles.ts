@@ -4,23 +4,23 @@ import { DESKTOP_WIDTH, TABLET_WIDTH } from "styles/constants";
 export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
-  background-image: url(/img/Volunteers/capa-voluntariado.png);
-  background-color: rgb(200, 101, 18, 0.5);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
   padding: 115px 52px 27px 52px;
   color: #ffffff;
   text-align: left;
   box-sizing: border-box;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgb(42, 181, 211, 0.3),
+      rgb(42, 181, 211, 0.3)
+    ),
+    url("/img/Team/knowtheteam.png");
 
   @media all and (min-width: ${DESKTOP_WIDTH}) {
     padding: 170px 0 27px 0;
     align-items: center;
-    background-image: url(/img/Volunteers/capa-voluntariado.png);
-    background-color: rgb(200, 101, 18, 0.5);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 50% 0;
   }
 `;
 
@@ -58,7 +58,7 @@ export const Description = styled.p`
   padding-bottom: 62px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  @media all and (min-width: ${TABLET_WIDTH}) {
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
     max-width: 480px;
     align-self: center;
     text-align: center;
