@@ -33,8 +33,8 @@ const AmbassadorProgram = () => {
       </S.Description>
       <S.StepsTitle>Como funciona?</S.StepsTitle>
       <S.StepsWrapper>
-        {steps.map((step, index) => (
-          <S.StepWrapper key={index}>
+        {steps.map((step) => (
+          <S.StepWrapper key={step.title}>
             <S.Sphere />
             <S.StepTitle>{step.title}</S.StepTitle>
             <S.StepDescription>{step.description}</S.StepDescription>

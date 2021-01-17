@@ -31,6 +31,7 @@ export const Title = styled.h3`
 export const NumbersWrapper = styled.section`
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 
   div {
     flex-direction: column;
@@ -57,6 +58,7 @@ export const ImpactNumbers = styled.span`
   align-items: center;
   text-align: center;
   letter-spacing: 0.05em;
+  
 `;
 
 export const ImpactDescription = styled.span`
@@ -70,6 +72,7 @@ export const ImpactDescription = styled.span`
   letter-spacing: 0.05em;
   color: rgba(0, 0, 0, 0.6);
   padding-bottom: 20px;
+  max-width: 250px;
 `;
 
 export const ODVsTitle = styled.p`

@@ -26,8 +26,8 @@ export const Panel = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   background: rgba(42, 181, 211, 0.7);
+  padding: 20px 0;
 `;
 
 export const Partners = styled.div`

@@ -8,8 +8,6 @@ export const Wrapper = styled.section`
   align-items: center;
   padding: 100px 40px;
 
-  @media all and (min-width: ${DESKTOP_WIDTH}) {
-  }
 `;
 
 export const Img = styled.img`

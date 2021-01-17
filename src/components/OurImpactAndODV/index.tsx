@@ -68,14 +68,14 @@ const OurImpactAndODV = () => (
           src="/img/Volunteers/light-bulb.png"
           alt="Foto abaixo do título de dois amigos rindo ao olhar para um celular"
         />
-        <span>Conhecimento</span>
+        <span>Inovação</span>
       </div>
       <div>
         <img
           src="/img/Volunteers/mirror.png"
           alt="Foto abaixo do título de dois amigos rindo ao olhar para um celular"
         />
-        <span>Conhecimento</span>
+        <span>Autoconhecimento</span>
       </div>
     </S.IconsWrapper>
   </S.Wrapper>

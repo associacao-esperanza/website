@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { TABLET_WIDTH } from "styles/constants";
+import {
+  DESKTOP_WIDTH,
+  SMALL_DESKTOP_WIDTH,
+  TABLET_WIDTH,
+} from "styles/constants";
 
 export const Wrapper = styled.section`
   display: flex;
@@ -26,9 +30,12 @@ export const Wrapper = styled.section`
     transform: skew(0, -10deg);
 
     @media all and (min-width: ${TABLET_WIDTH}) {
-      height: 250%;
       transform: skew(0, -6deg);
     }
+  }
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    padding: 52px 40px 0 40px;
   }
 `;
 
@@ -43,29 +50,39 @@ export const Description = styled.p`
   font-weight: 300;
   font-size: 1.125rem; // 18px
   line-height: 1.44; // 26px
-
   margin-top: 9px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
   @media all and (min-width: ${TABLET_WIDTH}) {
-    align-self: center;
+    align-self: left;
     max-width: 1244px;
     margin-top: 43px;
   }
 `;
 
 export const CharacteristicsWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: auto;
-  justify-items: center;
-  gap: 20px;
-  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+
+  @media all and (min-width: ${SMALL_DESKTOP_WIDTH}) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+`;
+
+export const CharacteristicWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 20px;
 `;
 
 export const Icon = styled.img`
   width: 64px;
   height: 64px;
+  margin: 0 10px 10px 0;
 `;
 
 export const CharacteristicDescription = styled.span`
@@ -76,4 +93,6 @@ export const CharacteristicDescription = styled.span`
   line-height: 30px;
   letter-spacing: 0em;
   text-align: center;
+  width: 100%;
+  max-width: 160px;
 `;

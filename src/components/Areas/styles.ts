@@ -3,7 +3,6 @@ import { DESKTOP_WIDTH, TABLET_WIDTH } from "styles/constants";
 
 export const Wrapper = styled.section`
   background-color: #ffff;
-  padding: 32px 10px 40px 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -25,12 +24,14 @@ export const Card = styled.div`
   align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
+  padding-bottom: 20px;
   margin-bottom: 50px;
 
   @media all and (min-width: ${TABLET_WIDTH}) {
     max-width: 1250px;
     min-width: 700px;
-    width: 70vw;
+    width: 100%;
+    height: 30vw;
   }
 `;
 
@@ -46,6 +47,7 @@ export const Profile = styled.div`
   @media all and (min-width: ${TABLET_WIDTH}) {
     flex-direction: row;
     justify-content: space-between;
+    max-width: none;
   }
 
   div:first-child {

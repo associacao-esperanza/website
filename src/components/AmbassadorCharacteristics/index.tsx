@@ -6,24 +6,24 @@ import * as S from "./styles";
 const AmbassadorCharacteristics = () => {
   const characteristics = [
     {
-      icon: "/img/Ambassador/clock.svg",
+      icon: "/img/Ambassadors/clock.svg",
       description: "120 horas de experiência",
     },
     {
-      icon: "/img/Ambassador/clock.svg",
-      description: "120 horas de experiência",
+      icon: "/img/Ambassadors/book.svg",
+      description: "7 Cursos",
     },
     {
-      icon: "/img/Ambassador/clock.svg",
-      description: "120 horas de experiência",
+      icon: "/img/Ambassadors/mentor.svg",
+      description: "Mentorias",
     },
     {
-      icon: "/img/Ambassador/clock.svg",
-      description: "120 horas de experiência",
+      icon: "/img/Ambassadors/learn.svg",
+      description: "Guias de aprendizagem",
     },
     {
-      icon: "/img/Ambassador/clock.svg",
-      description: "120 horas de experiência",
+      icon: "/img/Ambassadors/certificate.svg",
+      description: "Certificado de conclusão",
     },
   ];
   return (
@@ -42,13 +42,13 @@ const AmbassadorCharacteristics = () => {
       </S.Description>
       <S.Title>Características do programa</S.Title>
       <S.CharacteristicsWrapper>
-        {characteristics.map((characteristic, index) => (
-          <Fragment>
+        {characteristics.map((characteristic) => (
+          <S.CharacteristicWrapper key={characteristic.description}>
             <S.Icon src={characteristic.icon} />
             <S.CharacteristicDescription>
               {characteristic.description}
             </S.CharacteristicDescription>
-          </Fragment>
+          </S.CharacteristicWrapper>
         ))}
       </S.CharacteristicsWrapper>
     </S.Wrapper>

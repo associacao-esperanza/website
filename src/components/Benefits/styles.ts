@@ -7,7 +7,7 @@ export const Wrapper = styled.section`
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 `;
 
 export const Title = styled.h2`
@@ -39,22 +39,21 @@ export const Description = styled.p`
   }
 `;
 
-
 export const IconsWrapper = styled.div`
   display: none;
   @media all and (min-width: ${TABLET_WIDTH}) {
-    max-width: 1070px;
+    max-width: 1270px;
     display: grid;
     grid-template-columns: repeat(4, 200px);
     grid-auto-rows: 100px;
     grid-gap: 8vw;
-
-    div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      flex-direction: column;
-    }
   }
+`;
+
+export const Icon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 `;
