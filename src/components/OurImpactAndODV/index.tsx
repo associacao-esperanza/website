@@ -6,22 +6,22 @@ const OurImpactAndODV = () => (
   <S.Wrapper>
     <S.Title>Nosso Impacto</S.Title>
     <S.NumbersWrapper>
-      <div>
+      <S.NumberWrapper>
         <S.ImpactNumbers>3 mil</S.ImpactNumbers>
         <S.ImpactDescription>
           voluntários foram impactados por nossas ações
         </S.ImpactDescription>
-      </div>
-      <div>
+      </S.NumberWrapper>
+      <S.NumberWrapper>
         <S.ImpactNumbers>340</S.ImpactNumbers>
         <S.ImpactDescription>coisas feitas somente hoje</S.ImpactDescription>
-      </div>
-      <div>
+      </S.NumberWrapper>
+      <S.NumberWrapper>
         <S.ImpactNumbers>+ de 14</S.ImpactNumbers>
         <S.ImpactDescription>
           cidades que apoiam nossa iniciativa{" "}
         </S.ImpactDescription>
-      </div>
+      </S.NumberWrapper>
     </S.NumbersWrapper>
 
     <S.ODVsTitle>

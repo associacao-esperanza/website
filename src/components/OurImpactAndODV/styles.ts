@@ -28,23 +28,28 @@ export const Title = styled.h3`
   }
 `;
 
-export const NumbersWrapper = styled.section`
+export const NumbersWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
-
-  div {
-    flex-direction: column;
-    display: flex;
-    flex-grow: 1;
-  }
+  padding-top: 20px;
+  justify-content: center;
 
   @media all and (min-width: ${TABLET_WIDTH}) {
     width: 100%;
     background-color: rgb(42, 181, 211);
     flex-direction: row;
-    justify-content: space-between;
     padding: 20px 0;
+  }
+`;
+
+export const NumberWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    padding: 0 50px;
   }
 `;
 
@@ -58,7 +63,6 @@ export const ImpactNumbers = styled.span`
   align-items: center;
   text-align: center;
   letter-spacing: 0.05em;
-  
 `;
 
 export const ImpactDescription = styled.span`
