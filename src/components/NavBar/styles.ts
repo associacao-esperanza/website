@@ -79,7 +79,7 @@ export const Item = styled.li<ItemProps>`
 
 export const Toggle = styled.li`
   order: 1;
-  font-size: 26px;
+  font-size: 1.625rem; // 26px
 
   @media all and (min-width: ${DESKTOP_WIDTH}) {
     display: none;
