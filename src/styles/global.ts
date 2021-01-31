@@ -76,6 +76,10 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  ::placeholder {
+    color: rgba(0, 0, 0, 0.7);   
+    }
+
   a:hover {
   }
 `;
