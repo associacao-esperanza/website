@@ -9,7 +9,6 @@ export const Wrapper = styled.section`
   background-color: #1a407d;
   color: #fff;
   padding: 32px 10px 40px 10px;
-  margin-bottom: 20%;
 
   &::after {
     content: " ";
@@ -23,9 +22,10 @@ export const Wrapper = styled.section`
     background: #1a407d;
     transform-origin: bottom right;
     transform: skew(0, -10deg);
+    
 
     @media all and (min-width: ${TABLET_WIDTH}) {
-      height: 250%;
+      height: 200%;
       transform: skew(0, -6deg);
     }
   }
@@ -36,18 +36,30 @@ export const Title = styled.h2`
   line-height: 0.888; // 32px
   margin-top: 0;
   margin-bottom: 0;
+  font-family: MADE TOMMY;
+  font-weight: 500;
+  text-align: left;
+  padding: 0 10px;
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    padding: 0 0;
+    text-align: center;
+  }
 `;
 
 export const Description = styled.p`
   font-weight: 300;
   font-size: 1.125rem; // 18px
   line-height: 1.44; // 26px
-
   margin-top: 9px;
   margin-bottom: 0;
+  text-align: left;
+  font-family: Work Sans;
+  padding: 0 10px;
 
   @media all and (min-width: ${TABLET_WIDTH}) {
     align-self: center;
+    text-align: center;
     max-width: 1244px;
     margin-top: 43px;
   }

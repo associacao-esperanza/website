@@ -1,4 +1,3 @@
-import Main from "../components/Main";
 import AboutUs from "components/AboutUs";
 import Classes from "components/Classes";
 import Footer from "components/Footer";
