@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { TABLET_WIDTH } from "styles/constants";
+import { TABLET_WIDTH } from "../../styles/constants";
 
 export const Wrapper = styled.section`
   display: flex;
@@ -7,7 +7,6 @@ export const Wrapper = styled.section`
   text-align: center;
   position: relative;
   background-color: #1a407d;
-  padding: 52px 10px 50px 10px;
   color: #fff;
   padding: 32px 10px 40px 10px;
   margin-bottom: 20%;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DESKTOP_WIDTH, TABLET_WIDTH } from "styles/constants";
+import { DESKTOP_WIDTH, TABLET_WIDTH } from "../../styles/constants";
 
 export const Wrapper = styled.section`
   text-align: center;
