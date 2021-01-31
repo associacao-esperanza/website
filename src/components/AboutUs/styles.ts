@@ -13,30 +13,24 @@ export const Title = styled.h2`
   line-height: 0.888; // 32px
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 500;
+  margin-bottom: 20px;
 `;
 
 export const Messages = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: auto;
+  max-width: 390px;
 
   @media all and (min-width: ${TABLET_WIDTH}) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  @media all and (min-width: ${DESKTOP_WIDTH}) {
-    max-width: 1244px;
-    margin: auto;
+    max-width: 1200px;
   }
 `;
 
 export const Profile = styled.div`
   background: #ffffff;
   color: #000;
-  margin: 17px 13px;
   font-family: Roboto, sans-serif;
-  max-width: 365px;
+  padding: 10px;
 `;
 
 export const Image = styled.img`
