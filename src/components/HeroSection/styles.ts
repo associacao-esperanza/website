@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DESKTOP_WIDTH, TABLET_WIDTH } from "styles/constants";
+import { DESKTOP_WIDTH, TABLET_WIDTH } from "../../styles/constants";
 
 export const Wrapper = styled.section`
   display: flex;
@@ -20,8 +20,8 @@ export const Wrapper = styled.section`
 
 export const Title = styled.h1`
   font-weight: 500;
-  font-size: 36px;
-  line-height: 32px;
+  font-size: 2.25rem; // 36px
+  line-height: 0.888888889; // 32px
 
   @media all and (min-width: ${TABLET_WIDTH}) {
     margin: 100px 0 0 0;
@@ -35,8 +35,8 @@ export const Title = styled.h1`
 
 export const Description = styled.p`
   font-weight: 100;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 1.125rem; // 18px
+  line-height: 1.444444444; // 26px
 
   @media all and (min-width: ${TABLET_WIDTH}) {
     max-width: 480px;

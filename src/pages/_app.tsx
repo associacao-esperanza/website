@@ -1,3 +1,4 @@
+import NavBar from "components/NavBar";
 import { AppProps } from "next/app";
 import Head from "next/head";
 
@@ -24,6 +25,7 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <GlobalStyles />
+      <NavBar />
       <Component {...pageProps} />
     </>
   );
