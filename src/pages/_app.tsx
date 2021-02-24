@@ -1,3 +1,4 @@
+import Footer from "components/Footer";
 import NavBar from "components/NavBar";
 import { AppProps } from "next/app";
 import Head from "next/head";
@@ -35,6 +36,7 @@ function App({ Component, pageProps }: AppProps) {
       <GlobalStyles />
       <NavBar />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

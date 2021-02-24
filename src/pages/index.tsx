@@ -6,6 +6,7 @@ import History from "components/History";
 import MVV from "components/MVV";
 import Partners from "components/Partners";
 import Projects from "components/Projects";
+import { PageWrapper } from "components/PageWrapper/style";
 
 export type HomeProps = {
   profiles: Profile[];
@@ -13,7 +14,7 @@ export type HomeProps = {
 
 export default function Home(props: HomeProps) {
   return (
-    <>
+    <PageWrapper>
       <HeroSection />
       <Projects />
       <Classes />
@@ -21,8 +22,7 @@ export default function Home(props: HomeProps) {
       <MVV />
       <AboutUs {...props} />
       <Partners />
-      <Footer />
-    </>
+    </PageWrapper>
   );
 }
 

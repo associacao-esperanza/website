@@ -5,6 +5,7 @@ export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 500px;
 
   background-image: linear-gradient(
       rgba(200, 101, 18, 0.5),
