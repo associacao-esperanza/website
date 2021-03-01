@@ -4,15 +4,18 @@ import { DESKTOP_WIDTH, TABLET_WIDTH } from "styles/constants";
 export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
+  padding: 10% 0;
 
   @media all and (min-width: ${TABLET_WIDTH}) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media all and (min-width: ${DESKTOP_WIDTH}) {
     max-width: 1244px;
     margin: auto;
+    padding: 5% 0;
   }
 `;
 

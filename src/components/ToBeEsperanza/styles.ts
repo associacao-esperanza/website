@@ -26,11 +26,22 @@ export const Wrapper = styled.section`
     transform: skew(0, -10deg);
 
     @media all and (min-width: ${TABLET_WIDTH}) {
+      display: none;    
+      transform: none;
+    }
+
+    @media all and (min-width: ${TABLET_WIDTH}) {
       display: none;
     }
   }
 
   @media all and (min-width: ${TABLET_WIDTH}) {
+      transform: none;
+      border-radius: 0 0 5vw 5vw;
+    }
+
+
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
     flex-direction: row;
     margin-right: 10%;
     border-radius: 0 60px 60px 0;
@@ -47,7 +58,7 @@ export const Title = styled.h2`
   line-height: 30px;
   text-align: center;
 
-  @media all and (min-width: ${TABLET_WIDTH}) {
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
     display: none;
   }
 `;
@@ -55,7 +66,7 @@ export const Title = styled.h2`
 export const TitleDesktop = styled.h2`
   display: none;
 
-  @media all and (min-width: ${TABLET_WIDTH}) {
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
     font-family: MADE TOMMY;
     font-style: normal;
     font-weight: bold;
@@ -78,7 +89,7 @@ export const Image = styled.img`
   max-width: 780px;
   max-height: 522px;
 
-  @media all and (min-width: ${TABLET_WIDTH}) {
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
     padding-left: 30px;
     width: 780px;
     height: 522px;
@@ -95,7 +106,7 @@ export const Description = styled.p`
   text-align: left;
   padding: 0 10px;
 
-  @media all and (min-width: ${TABLET_WIDTH}) {
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
     align-self: center;
     max-width: 1244px;
     margin-top: 43px;

@@ -13,7 +13,7 @@ const HeroSection = () => (
     </S.Description>
 
     <S.Actions>
-      <Button>Seja aluno</Button>
+      <Button >Seja aluno</Button>
       <Button type={ButtonType.SECONDARY}>Seja voluntário</Button>
     </S.Actions>
   </S.Wrapper>

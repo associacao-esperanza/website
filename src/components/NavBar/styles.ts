@@ -10,14 +10,14 @@ export const Wrapper = styled.nav`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   @media all and (min-width: ${DESKTOP_WIDTH}) {
-    padding: 8px 24px;
+    padding: 12px 0;
   }
 `;
 
 export const Menu = styled.ul`
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
 
   display: flex;
   flex-wrap: wrap;
@@ -27,6 +27,7 @@ export const Menu = styled.ul`
   @media all and (min-width: ${DESKTOP_WIDTH}) {
     flex-wrap: nowrap;
     background: none;
+    padding: 0 40px;
   }
 `;
 
@@ -59,10 +60,18 @@ export const Logo = styled.li`
 export interface ItemProps {
   active?: boolean;
 }
+
+export const ItemWrapper = styled.div`
+  display: none;
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+`;
 export const Item = styled.li<ItemProps>`
-  padding: 10px;
+  width: 15%;
   order: 3;
-  width: 100%;
   text-align: center;
 
   display: ${(props) => (props.active ? "block" : "none")};
@@ -73,7 +82,7 @@ export const Item = styled.li<ItemProps>`
     /* display: block; */
     /* width: auto; */
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
 `;
 
@@ -88,6 +97,8 @@ export const Toggle = styled.li`
 
 export const Link = styled.a`
   display: flex;
+  font-weight: bold;
+
   &:focus {
     outline-style: none;
   }

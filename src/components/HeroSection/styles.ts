@@ -4,6 +4,7 @@ import { DESKTOP_WIDTH, TABLET_WIDTH } from "../../styles/constants";
 export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-image: linear-gradient(
       rgba(26, 64, 125, 0.5),
       rgba(26, 64, 125, 0.5)
@@ -12,10 +13,15 @@ export const Wrapper = styled.section`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   padding: 115px 52px 27px 52px;
   color: #ffffff;
   text-align: center;
+
+
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
+    height: 70vh;
+    min-height: 500px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -24,12 +30,12 @@ export const Title = styled.h1`
   line-height: 0.888888889; // 32px
 
   @media all and (min-width: ${TABLET_WIDTH}) {
-    margin: 100px 0 0 0;
+    margin: 50px 0 0 0;
     margin-bottom: 0;
   }
 
   @media all and (min-width: ${DESKTOP_WIDTH}) {
-    margin: 200px 0 0 0;
+    margin: 0 0 0 0;
   }
 `;
 
@@ -48,6 +54,8 @@ export const Actions = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 0 100px 0;
+
 
   > * + * {
     margin-top: 18px;
