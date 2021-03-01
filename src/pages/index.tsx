@@ -1,4 +1,4 @@
-import AboutUs, { Profile } from "components/AboutUs";
+import AboutUs from "components/AboutUs";
 import Classes from "components/Classes";
 import Footer from "components/Footer";
 import HeroSection from "components/HeroSection";
@@ -11,6 +11,15 @@ import { PageWrapper } from "components/PageWrapper/style";
 export type HomeProps = {
   profiles: Profile[];
 };
+
+
+export type Profile = {
+  src: string;
+  alt: string;
+  testimony: string;
+  author: string;
+};
+
 
 export default function Home(props: HomeProps) {
   return (

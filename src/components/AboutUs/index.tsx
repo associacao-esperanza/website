@@ -3,14 +3,6 @@ import React from "react";
 import * as S from "./styles";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
-import { DESKTOP_WIDTH, TABLET_WIDTH } from "styles/constants";
-
-export type Profile = {
-  src: string;
-  alt: string;
-  testimony: string;
-  author: string;
-};
 
 const AboutUs = ({ profiles }: HomeProps) => {
   const [ref] = useKeenSlider<HTMLDivElement>({

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DESKTOP_WIDTH, TABLET_WIDTH } from "styles/constants";
+import { DESKTOP_WIDTH } from "styles/constants";
 
 export const Wrapper = styled.section`
   background-color: #ffff;
@@ -18,6 +18,15 @@ export const Title = styled.h2`
   text-decoration: underline 10px #2ab5d3;
 `;
 
+export const Areas = styled.div`
+  margin: auto;
+  max-width: 390px;
+
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
+    max-width: 1200px;
+  }
+`;
+
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
@@ -27,7 +36,7 @@ export const Card = styled.div`
   padding-bottom: 20px;
   margin-bottom: 50px;
 
-  @media all and (min-width: ${TABLET_WIDTH}) {
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
     max-width: 1250px;
     min-width: 700px;
     width: 100%;
@@ -44,7 +53,7 @@ export const Profile = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media all and (min-width: ${TABLET_WIDTH}) {
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
     flex-direction: row;
     justify-content: space-between;
     max-width: none;
@@ -89,7 +98,7 @@ export const Actions = styled.div`
     margin-top: 18px;
   }
 
-  @media all and (min-width: ${TABLET_WIDTH}) {
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
     flex-direction: row;
     justify-content: center;
     margin-top: 87px;
