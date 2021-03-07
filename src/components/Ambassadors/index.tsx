@@ -9,11 +9,9 @@ import Partners from "components/Partners";
 
 const Main = () => (
   <S.Wrapper>
-    <NavBar />
     <AmbassadorProgram />
     <AmbassadorCharacteristics />
     <Partners />
-    <Footer />
   </S.Wrapper>
 );
 

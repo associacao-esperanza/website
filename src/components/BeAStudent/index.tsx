@@ -4,11 +4,12 @@ import * as S from "./styles";
 
 const KnowTheTeam = () => (
   <S.Wrapper>
-    <S.Title> Conheça a equipe Esperanza</S.Title>
+    <S.Title> Seja aluno dos nossos projetos apoiados</S.Title>
 
     <S.Description>
-      Nosso time é composto por profissionais que atuam em diferentes áreas, mas
-      que possuem uma característica em comum: querer fazer a diferença.
+      A Associação Esperanza apoia diversas ONGs e projetos educacionais que
+      visam entregar educação pública e popular de qualidade para pessoas que
+      realmente precisam.
     </S.Description>
   </S.Wrapper>
 );

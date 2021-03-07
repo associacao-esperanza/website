@@ -7,6 +7,7 @@ export const Wrapper = styled.footer`
   text-align: center;
   padding-top: 25px;
   padding-bottom: 100px;
+  box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.25);
 `;
 
 export const Info = styled.div`

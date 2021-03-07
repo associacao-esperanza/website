@@ -1,3 +1,5 @@
+import { HeroProps } from "components/HeroBlock";
+import { PageWrapper } from "components/PageWrapper/style";
 import Volunteers from "../components/Volunteers";
 
 export type Area = {
@@ -9,10 +11,15 @@ export type Area = {
 
 export type VolunteerProps = {
   areas: Area[];
+  hero: HeroProps
 };
 
 export default function Voluntariado(props: VolunteerProps) {
-  return <Volunteers {...props} />;
+  return (
+    <PageWrapper>
+      <Volunteers {...props} />
+    </PageWrapper>
+  );
 }
 
 export function getStaticProps() {
@@ -44,6 +51,14 @@ export function getStaticProps() {
             "Para fazer com que você tenha acesso a inúmeros benefícios por servoluntário Esperanza.",
         },
       ],
+      hero: {
+        title: "Já pensou em ser parte da solução?",
+        background: "/img/Volunteers/capa-voluntariado.png",
+        isButton: true,
+        buttonName: "Seja voluntário",
+        description:
+          "Se prepare para o mercado de trabalho e seja parte da mudança se voluntariando com o Esperanza.",
+      },
     },
   };
 }

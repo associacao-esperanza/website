@@ -17,7 +17,6 @@ export const Wrapper = styled.section`
   color: #ffffff;
   text-align: center;
 
-
   @media all and (min-width: ${DESKTOP_WIDTH}) {
     height: 70vh;
     min-height: 500px;
@@ -32,6 +31,9 @@ export const Title = styled.h1`
   @media all and (min-width: ${TABLET_WIDTH}) {
     margin: 50px 0 0 0;
     margin-bottom: 0;
+    font-family: MADE TOMMY;
+    font-size: 55px;
+    line-height: 69px;
   }
 
   @media all and (min-width: ${DESKTOP_WIDTH}) {
@@ -55,7 +57,6 @@ export const Actions = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 0 0 100px 0;
-
 
   > * + * {
     margin-top: 18px;

@@ -10,16 +10,16 @@ export enum ButtonType {
 
 export interface ButtonProps {
   type?: ButtonType;
-  inactive?: boolean;
+  isButton?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
   children,
   type = ButtonType.PRIMARY,
-  inactive = false,
+  isButton = true,
   ...props
 }) => (
-  <S.Wrapper {...props} buttonType={type} inactive={inactive}>
+  <S.Wrapper {...props} buttonType={type} isButton={isButton}>
     {children}
   </S.Wrapper>
 );

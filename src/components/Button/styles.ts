@@ -5,7 +5,7 @@ import { DESKTOP_WIDTH, TABLET_WIDTH } from "styles/constants";
 
 interface ButtonProps {
   buttonType: ButtonType;
-  inactive: boolean;
+  isButton: boolean;
 }
 
 const backgroundColor = (type: ButtonType) => {
@@ -20,7 +20,7 @@ const backgroundColor = (type: ButtonType) => {
 };
 
 export const Wrapper = styled.button<ButtonProps>`
-  display: ${(props) => (props.inactive ? "none" : "block")};
+  display: ${(props) => (props.isButton ? "block" : "none")};
   color: #fff;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -38,7 +38,7 @@ export const Wrapper = styled.button<ButtonProps>`
 
 
   @media all and (min-width: ${TABLET_WIDTH}) {
-    display: ${(props) => (props.inactive ? "block" : "block")};
+    display: ${(props) => (props.isButton ? "block" : "none")};
   }
 
 `;

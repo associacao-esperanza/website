@@ -6,8 +6,37 @@ export const Wrapper = styled.section`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 100px 40px;
+`;
 
+export const HeroWrapper = styled.div`
+  display: flex;
+  padding: 150px 0 100px 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+`;
+
+export const TitleWrapper = styled.div`
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    flex-direction: row;
+    width: 80%;
+  }
+
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
+    flex-direction: column;
+    width: 40%;
+  }
 `;
 
 export const Img = styled.img`
@@ -23,9 +52,16 @@ export const Title = styled.h1`
   font-weight: 500;
   line-height: 38px;
   text-align: left;
+  width: 90%;
+
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    flex-direction: row;
+    width: 90%;
+  }
 `;
 
-export const Description = styled.p`
+export const Description = styled.span`
+  width: 90%;
   font-family: Work Sans;
   font-size: 23px;
   font-style: normal;
@@ -35,10 +71,13 @@ export const Description = styled.p`
   text-align: left;
   padding-bottom: 50px;
 
+  @media all and (min-width: ${TABLET_WIDTH}) {
+    flex-direction: row;
+    width: 50%;
+  }
+
   @media all and (min-width: ${DESKTOP_WIDTH}) {
     max-width: 480px;
-    align-self: center;
-    text-align: center;
   }
 `;
 
@@ -53,11 +92,13 @@ export const StepsTitle = styled.span`
 `;
 
 export const StepsWrapper = styled.div`
+  width: 90%;
   display: grid;
   grid-template-columns: 1 fr;
   grid-template-rows: auto;
   justify-items: center;
   gap: 10px;
+  margin-bottom: 60px;
 
   @media all and (min-width: ${TABLET_WIDTH}) {
     grid-template-columns: repeat(4, 1fr);

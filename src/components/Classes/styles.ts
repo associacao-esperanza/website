@@ -17,20 +17,17 @@ export const Wrapper = styled.section`
   background-repeat: no-repeat;
   color: #ffffff;
   text-align: center;
-  padding: 29px 14px 57px 14px;
-
-  @media all and (min-width: ${TABLET_WIDTH}) {
-    padding: 57px 14px;
-  }
+  padding-top: 10vw;
 
   @media all and (min-width: ${DESKTOP_WIDTH}) {
-    padding-top: 97px;
     min-height: 450px;
     background-position: initial;
+    padding-top: 5rem;
   }
 `;
 
 export const Title = styled.h2`
+  width: 90%;
   font-size: 2.3rem; // 36px
   line-height: 0.888; // 32px
   margin-top: 0;
@@ -40,17 +37,19 @@ export const Title = styled.h2`
 `;
 
 export const Description = styled.p`
+  width: 80%;
   font-weight: 300;
   font-size: 1.125rem; // 18px
   line-height: 1.44; // 26px
   margin-top: 2rem;
   margin-bottom: 11.875rem;
   font-family: Work Sans;
-  padding: 0 10px;
+  margin: 0;
+  margin: 8vw 0 22vw 0;
 
   @media all and (min-width: ${TABLET_WIDTH}) {
     max-width: 450px;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 `;
