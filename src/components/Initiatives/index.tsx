@@ -1,17 +1,21 @@
 import React from "react";
 import * as S from "./styles";
-import NavBar from "components/NavBar";
-import Footer from "components/Footer";
-import BeAStudent from "components/BeAStudent";
 import ProjectSearch from "components/ProjectSearch";
+import { PageWrapper } from "components/PageWrapper/style";
+import HeroBlock from "components/HeroBlock";
+import { InitiativesProps } from "pages/iniciativas";
 
-const Team = () => (
+const Initiatives = ({ hero }: InitiativesProps) => (
   <S.Wrapper>
-    <NavBar />
-    <BeAStudent />
-    <ProjectSearch />
-    <Footer />
+    <PageWrapper>
+      <HeroBlock
+        background={hero.background}
+        title={hero.title}
+        description={hero.description}
+      />
+      <ProjectSearch />
+    </PageWrapper>
   </S.Wrapper>
 );
 
-export default Team;
+export default Initiatives;

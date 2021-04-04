@@ -29,7 +29,9 @@ const Footer = () => {
             <S.Link href="https://www.instagram.com/associacao_esperanza">
               Instagram
             </S.Link>
-            <S.Link href="">Linkedin</S.Link>
+            <S.Link href="https://www.linkedin.com/company/associa%C3%A7%C3%A3o-educa%C3%A7%C3%A3o-popular-esperanza/mycompany/?viewAsMember=true  ">
+              Linkedin
+            </S.Link>
           </S.SubSection>
         </S.Info>
       </PageWrapper>

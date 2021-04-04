@@ -36,6 +36,7 @@ function App({ Component, pageProps }: AppProps) {
       <GlobalStyles />
       <NavBar />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }
