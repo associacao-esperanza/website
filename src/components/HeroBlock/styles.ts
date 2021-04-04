@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { DESKTOP_WIDTH, TABLET_WIDTH } from "styles/constants";
 
 interface HeroStyleProps {
-  background: string
+  background: string;
 }
 
 export const Wrapper = styled.section<HeroStyleProps>`
@@ -20,13 +20,12 @@ export const Wrapper = styled.section<HeroStyleProps>`
       rgb(42, 181, 211, 0.3),
       rgb(42, 181, 211, 0.3)
     ),
-    url(${(props => props.background)});
+    url(${(props) => props.background});
   @media all and (min-width: ${DESKTOP_WIDTH}) {
     height: 75vh;
     padding: 10vh 0 77px 8vw;
     background-position: 50% 0;
   }
-
 `;
 
 export const Title = styled.h1`
@@ -37,10 +36,10 @@ export const Title = styled.h1`
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 40px 0;
+  max-width: 720px;
 
   @media all and (min-width: ${TABLET_WIDTH}) {
     margin: 100px 0 50px 0;
-    max-width: 600px;
   }
 
   @media all and (min-width: ${DESKTOP_WIDTH}) {
@@ -55,17 +54,17 @@ export const Title = styled.h1`
 `;
 
 export const Description = styled.p`
-  font-family: MADE TOMMY;
+  font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 19px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 40px 0;
+  font-weight: 300;
+  max-width: 850px;
 
   @media all and (min-width: ${DESKTOP_WIDTH}) {
-    max-width: 780px;
-    font-family: MADE TOMMY;
     font-size: 23px;
     font-weight: 300;
     line-height: 33px;

@@ -53,7 +53,7 @@ const TeamSearch = () => {
 
   return (
     <S.Wrapper>
-      <S.Title> Confira os projetos apoiados</S.Title>
+      <S.Title>Portal de iniciativas educacionais</S.Title>
       <InputSearch
         value={inputValue}
         onChange={(e: React.ChangeEvent<HTMLInputElement>): void =>

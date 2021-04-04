@@ -18,9 +18,9 @@ export function getStaticProps() {
   return {
     props: {
       hero: {
-        title: " Seja aluno dos nossos projetos apoiados",
+        title: "Seja aluno das iniciativas educacionas que apoiamos",
         description:
-          "A Associação Esperanza apoia diversas ONGs e projetos educacionais que visam entregar educação pública e popular de qualidade para pessoas que realmente precisam.",
+          "A Associação Esperanza apoia diversas ONGs e projetos educacionais que visam entregar educação pública e popular de qualidade para a população.",
         isButton: false,
         background: "/img/Initiatives/bg.png",
       },

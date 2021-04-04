@@ -39,6 +39,7 @@ export const Wrapper = styled.button<ButtonProps>`
 
   @media all and (min-width: ${TABLET_WIDTH}) {
     display: ${(props) => (props.isButton ? "block" : "none")};
+    cursor: pointer;
   }
 
 `;

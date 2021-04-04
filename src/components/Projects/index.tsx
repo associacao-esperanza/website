@@ -4,7 +4,7 @@ import * as S from "./styles";
 
 const Projects = () => (
   <S.Wrapper>
-    <S.Title>Nossos projetos</S.Title>
+    <S.Title>Iniciativas em destaque</S.Title>
     <S.Description>
       O que estamos fazendo para gerar impacto na educação?
     </S.Description>

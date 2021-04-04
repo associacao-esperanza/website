@@ -18,7 +18,7 @@ export const HeroWrapper = styled.div`
 
   @media all and (min-width: ${DESKTOP_WIDTH}) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 `;
 
@@ -43,6 +43,10 @@ export const Img = styled.img`
   width: 244px;
   height: 350px;
   background-color: grey;
+
+  @media all and (min-width: ${DESKTOP_WIDTH}) {
+    display: none;
+  }
 `;
 
 export const Title = styled.h1`
@@ -93,6 +97,7 @@ export const StepsTitle = styled.span`
 
 export const StepsWrapper = styled.div`
   width: 90%;
+  width: 90%;
   display: grid;
   grid-template-columns: 1 fr;
   grid-template-rows: auto;
@@ -116,7 +121,8 @@ export const StepWrapper = styled.div`
 export const Sphere = styled.img`
   width: 160px;
   height: 160px;
-  background-color: grey;
+  background: rgba(42, 181, 211, 0.7);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
   margin: 30px 0;
 `;

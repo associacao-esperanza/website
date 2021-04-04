@@ -48,6 +48,7 @@ export const Description = styled.p`
 
   @media all and (min-width: ${TABLET_WIDTH}) {
     max-width: 480px;
+    font-size: 23px; // 18px
     align-self: center;
   }
 `;

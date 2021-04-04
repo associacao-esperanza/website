@@ -10,8 +10,9 @@ const MVV = () => (
       </S.Icon>
       <S.Title>Missão</S.Title>
       <S.Description>
-        - Um cursinho popular que promove o acesso dos alunos a Universidade
-        Pública através do ENEM.
+        Fornecer meios para que amantes da educação consigam debater, aprender e
+        criar propostas de impacto na educação de populações economicamente
+        vulneráveis.
       </S.Description>
     </S.Item>
     <S.Item>
@@ -20,8 +21,10 @@ const MVV = () => (
       </S.Icon>
       <S.Title>Visão</S.Title>
       <S.Description>
-        - Um cursinho popular que promove o acesso dos alunos a Universidade
-        Pública através do ENEM.
+        Um mundo onde as pessoas que queiram ter a oportunidade de mudar a sua
+        vida através da educação consigam ter essa oportunidade, onde todas os
+        projetos educacionais tenham uma rede de apoio e todos os municípios
+        tenham projetos educacionais sustentáveis.
       </S.Description>
     </S.Item>
     <S.Item>
@@ -30,8 +33,10 @@ const MVV = () => (
       </S.Icon>
       <S.Title>Valores</S.Title>
       <S.Description>
-        - Um cursinho popular que promove o acesso dos alunos a Universidade
-        Pública através do ENEM.
+        Um mundo onde as pessoas que queiram ter a oportunidade de mudar a sua
+        vida através da educação consigam ter essa oportunidade, onde todas os
+        projetos educacionais tenham uma rede de apoio e todos os municípios
+        tenham projetos educacionais sustentáveis.
       </S.Description>
     </S.Item>
   </S.Wrapper>

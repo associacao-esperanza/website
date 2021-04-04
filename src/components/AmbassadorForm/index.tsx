@@ -4,9 +4,9 @@ import React from "react";
 import * as S from "./styles";
 
 export interface FormProps {
-  name: string;
-  email: string;
-  phone: string;
+  name?: string;
+  email?: string;
+  phone?: string;
   labelName: string;
   labelEmail: string;
   labelPhone: string;

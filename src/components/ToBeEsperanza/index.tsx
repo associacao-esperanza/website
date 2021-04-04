@@ -17,7 +17,7 @@ const ToBeEsperanza = () => (
         estamos em um beco sem saída, nós levantamos a cabeça, aprendemos com
         toda a experiência, e saímos mais fortes após esse desafio para outros
         desafios maiores ainda, pois acreditamos que para mudar o mundo através
-        da Educação não será fácil, mas nós estamos falando sério!vh
+        da Educação não será fácil, mas nós estamos falando sério!
       </S.Description>
     </S.DescriptionWrapper>
   </S.Wrapper>

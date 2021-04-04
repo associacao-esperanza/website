@@ -27,7 +27,9 @@ export const InfoWrapper = styled.div`
   text-align: left;
 `;
 
-export const Span = styled.span``;
+export const Span = styled.span`
+  color: #000000;
+`;
 
 export const Icon = styled.img`
   width: 2vw;

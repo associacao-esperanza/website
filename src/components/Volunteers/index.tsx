@@ -21,7 +21,7 @@ const Volunteers = (props: VolunteerProps) => (
     <ToBeEsperanza />
     <OurImpactAndODV />
     <Benefits />
-    <Areas {...props} />
+    {/* <Areas {...props} /> */}
   </S.Wrapper>
 );
 
